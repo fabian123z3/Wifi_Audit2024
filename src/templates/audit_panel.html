@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Panel</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/no_fa.png') }}">
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/audit_panel.js') }}" defer></script>
+    <!-- Estilo -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Audit Panel</h1>
+    </header>
+
+    <main>
+        <!-- Escaneo de Redes -->
+        <section>
+            <h2>Escaneo de Redes WiFi</h2>
+            <label for="interface">Seleccionar Interfaz:</label>
+            <select id="interface">
+                <option value="" disabled selected>Selecciona una interfaz</option>
+            </select>
+            <div class="actions">
+                <button id="scanWifiButton">Escanear Redes WiFi</button>
+            </div>
+        </section>
+
+        <!-- Captura de Handshake -->
+        <section>
+            <h2>Captura de Handshake</h2>
+            <label for="bssid">BSSID:</label>
+            <input type="text" id="bssid" placeholder="Introduce el BSSID">
+            <label for="channel">Canal:</label>
+            <input type="text" id="channel" placeholder="Introduce el Canal">
+            <div class="actions">
+                <button id="captureHandshakeButton">Capturar Handshake</button>
+            </div>
+        </section>
+
+        <!-- Crackeo de Contraseña -->
+        <section>
+            <h2>Crackeo de Contraseña</h2>
+            <form id="crackPasswordForm">
+                <label for="capFile">Seleccionar Archivo .cap:</label>
+                <input type="file" name="handshakeFile" id="capFile" accept=".cap">
+                <label for="dictFile">Archivo de Diccionario:</label>
+                <input type="file" name="dictFile" id="dictFile" accept=".txt,.dic">
+                <div class="actions">
+                    <button type="button" id="crackPasswordButton">Crackear Contraseña</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Resultados -->
+        <section>
+            <h2>Resultados</h2>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>WiFi Audit Tool - Herramienta de Auditoría</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const resultDiv = document.getElementById("result");
+
+            function handleError(message) {
+                console.error(message);
+                resultDiv.innerHTML = `<pre class="error">Error: ${message}</pre>`;
+            }
+
+            document.getElementById("crackPasswordButton").addEventListener("click", async () => {
+                const capFile = document.getElementById("capFile").files[0];
+                const dictFile = document.getElementById("dictFile").files[0];
+
+                if (!capFile || !dictFile) {
+                    handleError("Todos los campos son obligatorios.");
+                    return;
+                }
+
+                const formData = new FormData();
+                formData.append("handshakeFile", capFile);
+                formData.append("dictFile", dictFile);
+
+                try {
+                    const response = await fetch("/crack_password", {
+                        method: "POST",
+                        body: formData,
+                    });
+
+                    const data = await response.json();
+                    if (data.password) {
+                        resultDiv.innerHTML = `<pre>Contraseña encontrada: <strong>${data.password}</strong></pre>`;
+                    } else if (data.message) {
+                        resultDiv.innerHTML = `<pre>${data.message}</pre>`;
+                    } else {
+                        handleError(data.error || "No se encontró la contraseña.");
+                    }
+                } catch (error) {
+                    handleError(`Error al crackear contraseña: ${error.message}`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

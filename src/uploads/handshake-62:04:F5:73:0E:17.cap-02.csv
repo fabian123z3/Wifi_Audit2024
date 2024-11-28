@@ -1,0 +1,7 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+62:04:F5:73:0E:17, 2024-11-25 12:20:20, 2024-11-25 12:20:37,  4, 180, WPA2, CCMP, PSK, -42,      130,       17,   0.  0.  0.  0,  17, Redmi Note 10 Pro, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+4A:DE:66:2A:F4:E8, 2024-11-25 12:20:33, 2024-11-25 12:20:36, -29,       23, 62:04:F5:73:0E:17,Redmi Note 10 Pro
+

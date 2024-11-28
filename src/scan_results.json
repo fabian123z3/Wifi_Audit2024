@@ -1,0 +1,149 @@
+[
+    {
+        "BSSID": "6C:D8:19:A0:C0:28",
+        "Channel": "2.427 GHz (Channel 4)",
+        "Quality": "58/70",
+        "Encryption": "on",
+        "SSID": "CASA"
+    },
+    {
+        "BSSID": "A0:08:6F:47:F8:F4",
+        "Channel": "2.452 GHz (Channel 9)",
+        "Quality": "60/70",
+        "Encryption": "on",
+        "SSID": "Darwin"
+    },
+    {
+        "BSSID": "A4:00:E2:BA:B3:B4",
+        "Channel": "2.452 GHz (Channel 9)",
+        "Quality": "48/70",
+        "Encryption": "on",
+        "SSID": "Sebastian"
+    },
+    {
+        "BSSID": "64:6E:60:34:E4:56",
+        "Channel": "2.432 GHz (Channel 5)",
+        "Quality": "40/70",
+        "Encryption": "on",
+        "SSID": "WiFi_Mesh-052457"
+    },
+    {
+        "BSSID": "6C:D8:19:65:06:00",
+        "Channel": "2.437 GHz (Channel 6)",
+        "Quality": "34/70",
+        "Encryption": "on",
+        "SSID": "Margarita"
+    },
+    {
+        "BSSID": "18:56:44:61:F2:94",
+        "Channel": "2.447 GHz (Channel 8)",
+        "Quality": "38/70",
+        "Encryption": "on",
+        "SSID": "Gutiuwu"
+    },
+    {
+        "BSSID": "58:AF:F1:F8:11:80",
+        "Channel": "2.462 GHz (Channel 11)",
+        "Quality": "32/70",
+        "Encryption": "on",
+        "SSID": "Facundo"
+    },
+    {
+        "BSSID": "F4:70:ED:5A:92:F0",
+        "Channel": "2.462 GHz (Channel 11)",
+        "Quality": "28/70",
+        "Encryption": "on",
+        "SSID": "MARICEL"
+    },
+    {
+        "BSSID": "B8:5E:71:92:2F:49",
+        "Channel": "2.462 GHz (Channel 11)",
+        "Quality": "32/70",
+        "Encryption": "on",
+        "SSID": "Maria"
+    },
+    {
+        "BSSID": "30:FB:B8:B8:86:F0",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "34/70",
+        "Encryption": "on",
+        "SSID": "EMMA"
+    },
+    {
+        "BSSID": "CC:B1:71:BE:BD:08",
+        "Channel": "2.467 GHz (Channel 12)",
+        "Quality": "32/70",
+        "Encryption": "on",
+        "SSID": "Mia"
+    },
+    {
+        "BSSID": "56:F6:E2:21:AF:53",
+        "Channel": "2.437 GHz (Channel 6)",
+        "Quality": "34/70",
+        "Encryption": "on",
+        "SSID": ""
+    },
+    {
+        "BSSID": "F4:70:ED:61:2A:58",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "30/70",
+        "Encryption": "on",
+        "SSID": "Estrelladesello 2.4g"
+    },
+    {
+        "BSSID": "CA:2C:4F:A2:22:89",
+        "Channel": "2.422 GHz (Channel 3)",
+        "Quality": "22/70",
+        "Encryption": "on",
+        "SSID": "HiSmart-01-ca2c4fa22289"
+    },
+    {
+        "BSSID": "58:AF:F1:FC:6C:10",
+        "Channel": "2.437 GHz (Channel 6)",
+        "Quality": "30/70",
+        "Encryption": "on",
+        "SSID": "fh_fc6c10"
+    },
+    {
+        "BSSID": "FC:12:63:44:CB:4F",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "26/70",
+        "Encryption": "on",
+        "SSID": "Movistar"
+    },
+    {
+        "BSSID": "6C:A4:D1:8F:4E:30",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "24/70",
+        "Encryption": "on",
+        "SSID": "JesusPG 2.4g"
+    },
+    {
+        "BSSID": "CA:2C:4F:A2:24:D5",
+        "Channel": "2.422 GHz (Channel 3)",
+        "Quality": "28/70",
+        "Encryption": "on",
+        "SSID": "HiSmart-01-ca2c4fa224d5"
+    },
+    {
+        "BSSID": "12:9B:89:3C:07:A0",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "70/70",
+        "Encryption": "on",
+        "SSID": "Redmi Note 10 Pro"
+    },
+    {
+        "BSSID": "D8:33:B7:27:5D:8E",
+        "Channel": "2.412 GHz (Channel 1)",
+        "Quality": "22/70",
+        "Encryption": "on",
+        "SSID": "Efra"
+    },
+    {
+        "BSSID": "6C:A4:D1:B0:92:B0",
+        "Channel": "2.462 GHz (Channel 11)",
+        "Quality": "20/70",
+        "Encryption": "on",
+        "SSID": "Apocalypse"
+    }
+]
